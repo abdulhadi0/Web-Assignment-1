@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-brand .logo {
+    fill: #000;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    padding: 1rem 2rem;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    font-weight: 500;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ff764d;
+    background-color: transparent;
+    border-bottom: 2px solid #ff764d;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-overlay h1 {
+    font-size: 8rem;
+    color: #ff764d;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+    
+    .image-overlay h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-overlay h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-overlay h1 {
+        font-size: 3rem;
+    }
+}
